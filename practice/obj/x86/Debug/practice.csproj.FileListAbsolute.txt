@@ -1,0 +1,6 @@
+/Users/peterli/Documents/Dev Code Camp/Projects/practice/practice/bin/Debug/practice.exe
+/Users/peterli/Documents/Dev Code Camp/Projects/practice/practice/bin/Debug/practice.pdb
+/Users/peterli/Documents/Dev Code Camp/Projects/practice/practice/obj/x86/Debug/practice.csprojResolveAssemblyReference.cache
+/Users/peterli/Documents/Dev Code Camp/Projects/practice/practice/obj/x86/Debug/practice.csproj.CoreCompileInputs.cache
+/Users/peterli/Documents/Dev Code Camp/Projects/practice/practice/obj/x86/Debug/practice.exe
+/Users/peterli/Documents/Dev Code Camp/Projects/practice/practice/obj/x86/Debug/practice.pdb
