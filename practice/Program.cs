@@ -9,11 +9,21 @@ namespace practice
         public static void Main(string[] args)
         {
             //Problem one
+            Console.WriteLine("Problem 1:");
+            List<string> containsTH = new List<string>();
             List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+            string srch = "th";
             var wordSearch = words.Where(w => w.Contains("th")).Count();
-            Console.WriteLine(wordSearch);
+            Console.WriteLine("There are " + wordSearch + " words that have 'th' in it.");
+
+            var resultList = words.FindAll(delegate (string s) { return s.Contains(srch); });
+            foreach(var item in resultList){
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("");
 
             //Problem two
+            Console.WriteLine("Problem 2:");
             List<string> names = new List<string>() { "Mike", "Dan", "Scott", "Nick", "Mike" };
             foreach (string value in names)
             {
@@ -25,8 +35,10 @@ namespace practice
             {
                 Console.WriteLine("After: {0}", value);
             }
+            Console.WriteLine("");
 
             //Problem three
+            Console.WriteLine("Problem 3:");
             List<string> classGrades = new List<string>(){
                 "80,100,92,89,65",
                 "93,81,78,84,69",
@@ -71,6 +83,7 @@ namespace practice
             Console.WriteLine("");
 
             //Problem 4
+            Console.WriteLine("Problem 4:");
             string str = "terrill";
             List<string> charCounts = str.GroupBy(ch => ch).OrderBy(item => item.Key).Select(item => item.Key + "=" + item.Count().ToString()).ToList();
 
