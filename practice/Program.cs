@@ -15,8 +15,8 @@ namespace practice
             string srch = "th";
             var wordSearch = words.Where(w => w.Contains("th")).Count();
             Console.WriteLine("There are " + wordSearch + " words that have 'th' in it.");
-
             var resultList = words.FindAll(delegate (string s) { return s.Contains(srch); });
+            Console.WriteLine("The words are: ");
             foreach(var item in resultList){
                 Console.WriteLine(item);
             }
@@ -25,15 +25,18 @@ namespace practice
             //Problem two
             Console.WriteLine("Problem 2:");
             List<string> names = new List<string>() { "Mike", "Dan", "Scott", "Nick", "Mike" };
+            Console.WriteLine("Before");
             foreach (string value in names)
             {
-                Console.WriteLine("Before: {0}", value);
+                Console.WriteLine("{0}", value);
             }
-
+            Console.WriteLine("");
             List<string> distinct = names.Distinct().ToList();
+
+            Console.WriteLine("After");
             foreach (string value in distinct)
             {
-                Console.WriteLine("After: {0}", value);
+                Console.WriteLine("{0}", value);
             }
             Console.WriteLine("");
 
